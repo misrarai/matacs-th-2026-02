@@ -5,7 +5,7 @@
 | **Full name** | Muhammad Israr |
 | **Reference** | MATACS-TH-2026-02 |
 | **Role** | Associate Software Developer |
-| **Time actually spent** | __ hours __ minutes |
+| **Time actually spent** | __2.5 hours __ minutes |
 
 ## Repository contents
 
@@ -24,6 +24,6 @@ The AI only reads each proposal and extracts facts, each backed by an exact quot
 
 ## How I used AI tools
 
-I used Claude (Anthropic) to help draft the process design, the extraction prompt, the scoring formulas and the diagram, and to check the sample proposals against each criterion. I then reviewed every score in the ranking by hand against the criteria, and edited the write-up so that I can explain each decision myself.
+I used an AI assistant as a drafting aid: to brainstorm the process steps, draft the extraction prompt and the diagram, and cross-check each sample proposal against the criteria. I made the key design decisions myself: the AI only extracts facts, while code does all the scoring and ranking. I also recalculated the scores by hand before finalising ranking.json.
 
-One place I disagreed with the AI: its first draft treated Proposal C's experience count as fully valid, even though C counts installs "since 2020", which is partly outside the 5-year window. I made the prompt mark that kind of period as "unclear" so that a reviewer confirms the count instead of trusting it. I also reconsidered the AI's handling of Proposal D (no timeline stated). I kept D ranked with 0 points for timeline and a visible warning, rather than marking it ineligible, because timeline is a weighted criterion, not a mandatory one, and I stated this as an assumption in the write-up.
+Where I corrected the AI: it accepted Proposal C's experience count as fully valid, but C counts installs "since 2020", which is partly outside the required 5-year window. I changed the prompt so that this kind of period is marked "unclear" and must be confirmed by a reviewer. I also chose to keep Proposal D ranked with 0 points for timeline and a visible warning, rather than ineligible, because timeline is a weighted criterion, not a mandatory one. This is stated as an assumption in the write-up.
