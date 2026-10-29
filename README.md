@@ -5,7 +5,7 @@
 | **Full name** | Muhammad Israr |
 | **Reference** | MATACS-TH-2026-02 |
 | **Role** | Associate Software Developer |
-| **Time actually spent** | __2.5 hours __ minutes |
+| **Time actually spent** | 2.5 hours  |
 
 ## Repository contents
 
